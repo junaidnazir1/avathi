@@ -34,8 +34,13 @@ You can now access the server at http://localhost:8000
 ## Folders
 
 app - Contains all the Eloquent models
+
 app/Http/Controllers- Contains all the api controllers
+
 database/migrations - Contains all the database migrations
+
 database/seeds - Contains the database seeder
+
 routes - Contains all the  routes 
+
 
