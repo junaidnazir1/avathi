@@ -19,7 +19,7 @@
                 @foreach ($posts as $post)
                 <tr>
                     <td>{{ $post->title }}</td>
-                    <td>{{ $post->description }}</td>
+                    <td>{!! $post->description !!}</td>
                     <td>{{ $post->categories }}</td>
                     <td>{{ $post->tags }}</td>
                     <td>  <a class="btn btn-info" href="{{ route('get_post',$post->slug) }}">View</a><td>  

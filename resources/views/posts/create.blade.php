@@ -13,10 +13,11 @@
                     <input type="Title" name='title' class="form-control" id="title"  placeholder="Enter Post Title">
                 </div>
                
+               
                 <div class="form-group">
-                    <label for="des">Post Desctiption</label>
-                    <textarea class="form-control" name='description' id="des"  placeholder="Enter Post" rows="7">  </textarea>
-                </div>
+                                <label>Description</label>
+                                <textarea name="description" rows="8" cols="40" class="form-control tinymce-editor"></textarea>
+                            </div> 
 
                 <div class="form-group">
                     <h6> Categories </h6>
@@ -45,4 +46,24 @@
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>  
+    <script type="text/javascript">
+        tinymce.init({
+            selector: 'textarea.tinymce-editor',
+            height: 100,
+            menubar: false,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste code help wordcount'
+            ],
+            toolbar: 'undo redo | formatselect | ' +
+                'bold italic backcolor | alignleft aligncenter ' +
+                'alignright alignjustify | bullist numlist outdent indent | ' +
+                'removeformat | help',
+            content_css: '//www.tiny.cloud/css/codepen.min.css'
+        });
+    </script>
 @endsection
